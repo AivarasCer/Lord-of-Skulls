@@ -1,6 +1,6 @@
 # Lord of Skulls
 
-Lord of Skulls is a dungeon crawler game based on the board game "Lord of Bones." Developed using Python and the Pygame library, this game takes you on an adventure through dark dungeons filled with enemies, treasures, and hidden secrets. Your goal is to survive the dangers, defeat the lord of the dungeon, and claim your victory.
+Lord of Skulls is a dungeon crawler game based on the board game "Lord of Bones." Developed using Python and the tcod library, this game takes you on an adventure through dark dungeons filled with enemies, treasures, and hidden secrets. Your goal is to survive the dangers, defeat the lord of the dungeon, and claim your victory.
 
 ## Installation
 
@@ -35,7 +35,7 @@ To run this game on your local machine, follow these steps:
 ## Requirements
 
 - Python 3.7+
-- Pygame
+- tcod
 
 You can install Pygame using pip:
 
