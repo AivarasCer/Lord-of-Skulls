@@ -23,3 +23,12 @@ class RectangularRoom:
         """Return the inner area of this room as a 2D array index."""
         return slice(self.x1 + 1, self.x2), slice(self.y1 + 1, self.y2)
 
+
+def generate_dungeon(map_width, map_height) -> GameMap:
+    dungeon = GameMap(map_width, map_height)
+
+    starting_room = RectangularRoom(x=20, y=15, width=10, height=15)
+
+    dungeon.tiles[starting_room.inner] = tile_types.floor
+
+    return dungeon
