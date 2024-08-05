@@ -28,12 +28,12 @@ def main() -> None:
 
     engine = Engine(entities=entities, event_handler=event_handler, game_map=game_map, player=player)
 
-    with tcod.context.new_terminal(
-        screen_width,
-        screen_height,
-        tileset=tileset,
-        title='Lord of Skulls',
-        vsync=True,
+    with tcod.context.new(
+            columns=screen_width,
+            rows=screen_height,
+            tileset=tileset,
+            title="Lord of Skulls",
+            vsync=True
     ) as context:
         root_console = tcod.console.Console(screen_width, screen_height, order='F')
         while True:
